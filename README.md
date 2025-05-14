@@ -32,40 +32,18 @@ Additionally, a **Graphical User Interface (GUI)** using `Tkinter` allows users 
 
 ## 📂 Project Structure
 
+## 📂 Project Structure
+
+```plaintext
 gender-prediction-nlp/
 ├── model/
-│ ├── best_model.pkl # Trained model (Linear SVM)
-│ └── vectorizer.pkl # Saved TF-IDF vectorizer
-├── train_model.py # Model training and evaluation script
-├── gui_app.py # GUI script for prediction
-├── utils.py # Helper functions (optional modularization)
-├── README.md # Project documentation
-├── requirements.txt # Python package dependencies
-
-Install Dependencies
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Train the Model
-
-bash
-Copy
-Edit
-python train_model.py
-Run the GUI App
-
-bash
-Copy
-Edit
-python gui_app.py
-🧪 Model Training & Evaluation
-Three machine learning models were trained and evaluated using metrics like Accuracy, Precision, Recall, and F1-score. Based on the results, Linear SVM performed the best.
-
-Model	Accuracy	Precision	Recall	F1-Score
-Logistic Regression	0.7165	0.7210	0.6978	0.7092
-Naive Bayes	0.6882	0.6619	0.7577	0.7065
+│   ├── best_model.pkl          # Trained model (Linear SVM)
+│   └── vectorizer.pkl          # Saved TF-IDF vectorizer
+├── train_model.py              # Model training and evaluation script
+├── gui_app.py                  # GUI script for prediction
+├── utils.py                    # Helper functions (optional)
+├── requirements.txt            # Python package dependencies
+├── README.md                   # Project documentation
 Linear SVM (Best)	0.7229	0.7246	0.7107	0.7176
 
 ✅ Best Model: Linear SVM based on F1-score
